@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Empieza creando tu usuario</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Nombre (como sale en el DNI)" required>
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="1º apellido (como sale en el DNI)" required>
+                <input type="text" placeholder="2º apellido (como sale en el DNI)" required>
+            </div>
+            <div class="form-row">
+                <select required>
+                    <option value="" disabled selected>Tipo de documento</option>
+                    <option value="dni">DNI</option>
+                    <option value="nif">NIF</option>
+                    <option value="cert">CERT. AEAT</option>
+                </select>
+                <input type="text" placeholder="Número de documento" required>
+            </div>
+            <div class="form-row">
+                <div>
+                    <span>ES</span>
+                    <input type="tel" placeholder="Móvil" required>
+                </div>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <button>Enviar</button>
+        </form>
+</body>
+</html>
